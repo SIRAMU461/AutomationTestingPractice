@@ -43,8 +43,10 @@ public class ScrollingPage {
 		js.executeScript("window.scrollTo(0, 3501);");
 		Thread.sleep(5000);
 		js.executeScript("window.scrollTo(0, -3501);");
-		
-
+		Thread.sleep(5000);
+		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		Thread.sleep(5000);
+		js.executeScript("window.scrollTo(0, -document.body.scrollHeight)");
 	}
 
 }
